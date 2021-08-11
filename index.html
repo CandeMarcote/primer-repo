@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="Descubre su historia, las opciones de meridaje recomendadas, recetas y más...">
+    <meta name="keywords"
+    content="queso,receta,acompañamientos,meridajes,historia,cheese,recipe">
+    <title>Descubre el mundo del queso</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="body">
+     <header class="header">
+        <nav class="navbar navbar-expand-lg header__navbar">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="header__a nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="header__a nav-link" href="historia.html">Historia</a>
+                        <a class="header__a nav-link" href="meridaje.html">Meridajes</a>
+                        <a class="header__a nav-link" href="hechura.html">¿Cómo se hace?</a>
+                        <a class="header__a nav-link active" href="recetas.html">Recetas</a>
+                        <a class="header__a nav-link" href="cultura.html">cultura</a>
+                    </div>
+              </div>
+            </div>
+          </nav>
+
+        <div class="header__titleBox">
+            <h1 class="header__title">Descubre el mundo del Queso</h1>
+            <p class="header__subtitle">El queso es uno de los alimentos más importantes de las dietas modernas, pero además es una delicia digna de disfruar. Te invitamos a aprender más sobre esta delicatessen.</p>
+        </div>
+    </header>
+
+    <main class="main">
+        
+        <div class="imagen">
+            <img class="imagen__img" src="images/logo-book.png" alt="Un poco de historia">
+            <a href="historia.html">Un poco de historia</a>
+        </div>
+
+        <div class="imagen">            
+            <img class="imagen__img" src="images/logo-wineglass.png" alt="Acompañando un buen queso">
+            <a href="meridaje.html" class="imagen__a">Acompañando un buen queso</a>
+        </div>
+
+        <div class="imagen">            
+            <img class="imagen__img" src="images/logo-cook.png" alt="¿Cómo se hace el queso?">
+            <a href="hechura.html" class="imagen__a">¿Cómo se hace el queso?</a>
+        </div>
+
+        <div class="imagen">
+            <img class="imagen__img" src="images/logo-pizza.png" alt="Recetas con queso">
+            <a href="recetas.html" class="imagen__a">Recetas con queso</a>
+        </div>
+
+        <div class="imagen">
+            <img class="imagen__img" src="images/logo-saycheese.png" alt="el queso en la cultura">
+            <a href="cultura.html" class="imagen__a">El queso en la cultura</a>
+        </div>
+    </main>
+
+    <section class="form form-register">
+        <form action="data.php" method="POST">
+            <fieldset>
+                <legend class="form__title">Para recibir más información completa este formulario!</legend>
+
+                <div class="form__complete">
+                    <div class="formDiv nombre">
+                        <label class="form__label" for="Nombre">Ingresa tu nombre</label>
+                        <input class="form__input input-nombre" type="text" placeholder="Escribe tu nombre" name="nombre" id="Nombre">
+                    </div>
+
+                    <div class="formDiv email">
+                        <label class="form__label" for="e-mail">Direción de e-mail</label>
+                        <input class="form__input input-email" type="email" placeholder="emailadress@example.com" name="email" id="e-mail">
+                    </div>
+                    
+                    <div class="formDiv pais">
+                        <label class="form__label" for="pais">Selecciona tu país</label>
+                        <select name="País" id="Pais" class="form__input input-pais">
+                            <option value="AR">Argentina</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BR">Brasil</option>
+                            <option value="CL">Chile</option>
+                            <option value="CO">Colombia</option>
+                            <option value="CR">Costa Rica</option>
+                            <option value="CU">Cuba</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="SV">El Salvador</option>
+                            <option value="ES">España</option>
+                            <option value="US">Estados Unidos</option>
+                            <option value="HN">Honduras</option>
+                            <option value="FK">Islas Malvinas</option>
+                            <option value="MX">México</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="PE">Perú</option>
+                            <option value="PR">Puerto Rico</option>
+                            <option value="CH">Suiza</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="VE">Venezuela</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="formDiv favorito">
+                        <label class="form__label" for="fav-cheese">Elige tu queso favorito</label>
+                        <input  class="form__input input-fav" type="text" list="cheese-list" id="fav-cheese">
+                        <datalist id="cheese-list">
+                            <option value="Azul">
+                            <option value="Brie">
+                            <option value="Camembert">
+                            <option value="Cheddar">
+                            <option value="Feta">
+                            <option value="Gorgonzola">
+                            <option value="Gouda">
+                            <option value="Gruyere">
+                            <option value="Holanda">
+                            <option value="Manchego">
+                            <option value="Mozzarella">
+                            <option value="Parmesano">
+                            <option value="Roquefort">
+                            <option value="Sardo">
+                            <option value="Otro">
+                        </datalist>
+                    </div>
+
+                    <div>
+                        <label class="LabelCheckbox">¿Que te gustaría recibir?</label>
+                        <div">
+                            <div>
+                                <input type="checkbox" name="noticias">
+                                <span>Noticias</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="recetas">
+                                <span>Más Recetas</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="recomendaciones">
+                                <span>Recomendaciones</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="form__button-flex">
+                        <input class="btn btn-success FormButton enviar" type="submit" value="Enviar">
+                        <input class="btn btn-danger FormButton borrar" type="reset" value="Borrar todo">
+                    </div>                    
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <a class="footer__a" href="my-portfolio.html">By Cande</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+
+
+//header index
+
+.body{
+    .header{
+        @include size(100%, fit-content);
+    
+        .header__navbar{
+            width: 90%;
+            background-color: hsl(60, 10, 20);
+            display: block;
+            margin: 0 auto;
+            
+            .header__a{
+                font-weight: bold;
+                color:#bd9d58; 
+                position: relative;
+                
+                &:hover{
+                    border-bottom: 2px solid #bd9d58;}
+            }
+            
+        }
+    
+        .header__titleBox{
+            width: 80ch;
+            margin: 10vh auto 15vh 5vh;
+    
+            .header__title{
+                font-size: 5rem;
+                color: hsl(48, 40%, 80%);
+                font-weight: lighter;
+                font-family: 'Fredericka the Great', cursive;
+            }
+    
+            .header__subtitle {
+                font-size: 1.2rem;
+                color: #bd9d58;
+            }
+        }
+    }
+}
+
+// Other headers
+
+.body--general{
+    .header{
+        @include size(100%, fit-content);
+        
+        background:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/cheese-wallpaper-edited.jpg);
+        background-size: cover;
+        margin-bottom: $marginBottom;
+        border-bottom: #BFA880 3px solid;
+    
+        .header__navbar{
+            width: 90%;
+            background-color: hsl(60, 10, 20);
+            display: block;
+            margin: 0 auto;
+            
+            .header__a{
+                font-weight: bold;
+                color:#bd9d58; 
+                position: relative;
+                
+                &:hover{
+                    border-bottom: 2px solid #bd9d58;}
+            }
+            
+        }
+    
+        .header__titleBox{
+            width: 80ch;
+            margin: 5vh auto 15vh 5vh;
+    
+            .header__titulo{
+                font-size: 5rem;
+                color: hsl(48, 40%, 80%);
+                font-weight: lighter;
+                font-family: 'Fredericka the Great', cursive;
+            }
+    
+            .header__subtitulo {
+                font-size: 1.2rem;
+                color: #bd9d58;
+            }
+        }
+    }
+}

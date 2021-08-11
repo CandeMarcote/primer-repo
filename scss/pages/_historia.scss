@@ -1,0 +1,33 @@
+
+
+//historia
+
+.body--general{
+    section{        
+        margin-bottom: $marginBottom;
+
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    @include flex($flex, $center);
+
+                    .carousel__img--size{
+                        @include size(70vw, 80vh);
+                    }
+
+                    .carousel-caption{
+                        background:$DarkBrown05;
+
+                        h5{color:$subtitleColor;}
+
+                        p{
+                            color:$subtitleColor;
+                            padding: auto;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
