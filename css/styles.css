@@ -9,8 +9,9 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/bg1.jpg) fixed 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Raleway', sans-serif; }
-  @media screen and (max-width: 820px) {
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden; }
+  @media screen and (min-width: 401px) and (max-width: 820px) {
     .body {
       overflow: hidden; } }
 
@@ -58,7 +59,8 @@
     .body--general .header .header__navbar .header__a {
       font-weight: bold;
       color: #bd9d58;
-      position: relative; }
+      position: relative;
+      border-bottom: transparent; }
       .body--general .header .header__navbar .header__a:hover {
         border-bottom: 2px solid #bd9d58; }
   .body--general .header .header__titleBox {
@@ -88,7 +90,8 @@
       cursor: pointer; }
     .body .main .imagen .imagen__img {
       width: 10vw;
-      height: 15vh; }
+      height: 15vh;
+      color: #fbefce; }
     .body .main .imagen .imagen__a {
       text-decoration: none;
       font-weight: bold;
@@ -96,7 +99,7 @@
       color: #bd9d58;
       vertical-align: baseline; }
 
-.body .form {
+.body section .form {
   padding: 2em;
   max-width: 70vw;
   margin: 10vw auto;
@@ -106,40 +109,32 @@
   border: outset rgba(251, 239, 206, 0.05) 0.125em solid;
   box-shadow: rgba(251, 239, 206, 0.5) 0 0 5px 10px;
   border-radius: 5%; }
-  @media screen and (min-width: 821px) and (max-width: 1416px) {
-    .body .form {
-      width: fit-content;
-      font-size: 0.7rem; } }
-  .body .form fieldset .form__complete {
+  .body section .form fieldset .form__title {
+    font-weight: bolder;
+    padding: 15px;
+    text-align: center; }
+  .body section .form fieldset .form__complete {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    max-height: 40vh; }
-    @media screen and (min-width: 821px) and (max-width: 1416px) {
-      .body .form fieldset .form__complete {
-        max-height: fit-content; } }
-    .body .form fieldset .form__complete * {
+    flex-wrap: wrap; }
+    .body section .form fieldset .form__complete * {
       margin: 5px; }
-    .body .form fieldset .form__complete .form__title {
-      font-weight: bolder;
-      padding: 15px;
-      text-align: center; }
-    .body .form fieldset .form__complete .formDiv {
+    .body section .form fieldset .form__complete .form__complete--display {
       display: inline-flex; }
       @media screen and (min-width: 821px) and (max-width: 1416px) {
-        .body .form fieldset .form__complete .formDiv {
+        .body section .form fieldset .form__complete .form__complete--display {
           display: flex;
           flex-flow: wrap column; } }
-    .body .form fieldset .form__complete .form__label {
-      width: 14vw; }
-    .body .form fieldset .form__complete .form__input {
-      padding: 2px;
-      width: 17vw;
-      background-color: #FBEFCE;
-      border: none;
-      border-radius: 5%;
-      display: block; }
-  .body .form fieldset .form__button-flex {
+      .body section .form fieldset .form__complete .form__complete--display .form__label {
+        width: 14vw; }
+      .body section .form fieldset .form__complete .form__complete--display .form__input {
+        padding: 2px;
+        width: 17vw;
+        background-color: #FBEFCE;
+        border: none;
+        border-radius: 5%;
+        display: block; }
+  .body section .form fieldset .form__button-flex {
     display: flex;
     justify-content: space-evenly;
     margin: 7% auto 2%; }
@@ -274,3 +269,22 @@
   color: #bd9d58;
   font-weight: bold;
   margin-bottom: 5vh; }
+
+@media only screen and (max-width: 400px) {
+  .body {
+    background-image: none;
+    background-color: #fbefce; }
+    .body .header .header__titleBox {
+      max-width: 90%; }
+      .body .header .header__titleBox .header__title {
+        font-size: 1.2rem;
+        color: #413E3A; }
+      .body .header .header__titleBox .header__subtitle {
+        font-size: 0.9rem; }
+    .body .main .imagen {
+      display: inline-block; }
+      .body .main .imagen .imagen__img .imagen__a {
+        color: #413E3A; }
+    .body .form .fieldset .form__complete--display {
+      display: flex;
+      flex-direction: column; } }
