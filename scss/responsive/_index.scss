@@ -120,9 +120,12 @@
     }
 }
 
+//TABLET STYLE
+
 @media only screen and (min-width: 431px) and (max-width: 920px) {
     .body{
         .header{
+            width:100%;
             margin: 10px auto; 
 
             .header__titleBox{

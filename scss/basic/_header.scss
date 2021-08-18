@@ -77,7 +77,7 @@
     
             .header__titulo{
                 font-size: 5rem;
-                color: hsl(48, 40%, 80%);
+                color: #e0d8b8;
                 font-weight: lighter;
                 font-family: 'Fredericka the Great', cursive;
             }
@@ -85,6 +85,53 @@
             .header__subtitulo {
                 font-size: 1.2rem;
                 color: #bd9d58;
+            }
+        }
+        //MOBILE STYLE
+        @media only screen and (max-width:430px) {
+            background-image: none;
+            background-color: $bgColor;
+            width: 90%;
+
+            .header__titleBox{
+                @include size(fit-content, 90%);
+                margin: 5vh auto 10% 5vh;
+
+                .header__titulo{
+                    color: $fontDarkBrown;
+                    font-size: 3rem;
+                    text-align: center;
+                }
+
+                .header__subtitulo{
+                    font-size: 1.2rem;                    
+                    text-align: center;
+                }
+            }
+        }
+        //TABLET STYLE
+        @media only screen and (min-width:431px) and (max-width:920px){
+            width: 100%;
+            margin-bottom:5vh;
+
+            .header__titleBox{
+                @include size(fit-content, 90%);
+                margin-bottom: 10%;
+                padding:0;
+                
+                .header__titulo{
+                    font-size: 3.5rem;
+                    text-align: center;
+                    margin:0;
+                    width: 100%;
+
+                }
+
+                .header__subtitulo{
+                    font-size: 1.2rem;
+                    text-align: center;
+                    width: 100%;
+                }
             }
         }
     }

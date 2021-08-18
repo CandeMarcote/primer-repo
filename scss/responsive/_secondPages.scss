@@ -1,0 +1,122 @@
+
+//MOBILE-STYLE
+//Elaboración
+@media only screen and (max-width:430px){
+    .body--general{
+        main{
+            grid-template-areas:
+            ". cbrown cbrown cbrown cbrown"
+            ". cgreen cgreen cgreen ."
+            ". corange corange corange corange"
+            ". corange corange corange blue";
+            grid-row-gap: 15px;
+
+            .txt1{
+                width:75vw;
+                dl{
+                    width:90%;
+                    .list__title{
+                        font-size: 1.5rem;
+                    }    
+                
+                    .list__item{
+                        font-size: 1.2rem;
+                    }
+                }            
+    
+                .txt3{
+                    font-size: 1.2rem;
+                    width: 90%;
+                }
+            }
+
+            .txt2{
+                figure{
+                    .list__img{                        
+                        display: none;
+                    }
+                }
+            }
+
+            .txt4{
+                width:90%;
+    
+                dl{
+                    .list__title{
+                        font-size: 1.5rem;
+                    }    
+                
+                    .list__item{
+                        font-size: 1.2rem;
+                    }
+                }
+
+                &::before{
+                    left:-3%;
+                }
+            }
+        }
+    }
+}
+
+//TABLET STYLE
+//elaboración
+
+@media only screen and (min-width:431px) and (max-width:920px){
+    .body--general{
+        main{
+            grid-template-areas:
+            ". cbrown cbrown cbrown cbrown"
+            ". cgreen cgreen cgreen ."
+            ". corange corange corange corange"
+            ". corange corange corange blue";
+            grid-row-gap: 15px;
+            width:90%;
+
+            .txt1{
+                width:75vw;
+                dl{
+                    width:90%;
+                    .list__title{
+                        font-size: 1.5rem;
+                    }    
+                
+                    .list__item{
+                        font-size: 1.2rem;
+                    }
+                }            
+    
+                .txt3{
+                    font-size: 1.2rem;
+                    width: 100%;
+                }
+            }
+
+            .txt2{
+                figure{
+                    .list__img{                        
+                        display: none;
+                    }
+                }
+            }
+
+            .txt4{
+                width:100%;
+    
+                dl{
+                    .list__title{
+                        font-size: 1.5rem;
+                    }    
+                
+                    .list__item{
+                        font-size: 1.2rem;
+                    }
+                }
+
+                &::before{
+                    left:-5%;
+                }
+            }
+        }
+    }
+}
