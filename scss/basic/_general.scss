@@ -11,15 +11,6 @@
     background-size: cover;
     background-repeat: no-repeat;    
     font-family: 'Raleway', sans-serif;
-    overflow:hidden;
-
-    @media screen and (max-width: 400px){
-        
-    }
-
-    @media screen and (min-width:401px) and (max-width: 820px){
-        overflow: hidden;
-    }
 }
 
 .body--general{

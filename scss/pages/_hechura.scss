@@ -3,35 +3,42 @@
 
 //hechura
 
+
 .body--general{
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        ". cbrown cbrown cbrown cblue"
+        ". cgreen cgreen . cblue"
+        ". corange corange corange .";
 
-    .AddMargin{
-    margin: 100px auto auto;
+        .txt1{grid-area: cbrown;}
 
-        dl{
-            .TituloListas{
-                font-size: 1.5em;
-                margin: 10px;
-                font-weight: bold;
-            }
+        .txt2{
+            grid-area: cblue;
+            transform: rotate(45deg) translateX(-10vw);
+            float:right;
+            border:$border2;
+        }
+        .txt3{grid-area: cgreen;}
+        
+        .txt4{grid-area: corange;}
 
-            .numeracion-dd{
-                display:list-item;
-                list-style-type: upper-roman;
-                list-style-position: inside;
-                text-align: left;
-                margin: 20px;
+        .list{
+            dl{
+                .list__title{
+                    font-size: 2rem;
+                    color:$fontDarkBrown;
+                }    
+            
+                .list-item{
+                    font-size: 1.2rem;
+                    color: $fontDarkBrown;
+                    border:$border;
+                }
             }
         }
     }
-    .TextPage3{
-        font-size: 1.5rem;
-        margin: 50px;
-        font-weight: normal;
-    }
 }
-
-
-
-
-
