@@ -11,33 +11,80 @@
         grid-template-rows: repeat(4, auto);
         grid-template-areas:
         ". cbrown cbrown cbrown cblue"
-        ". cgreen cgreen . cblue"
-        ". corange corange corange .";
+        ". cgreen cgreen cgreen cblue"
+        ". corange corange corange corange";
 
-        .txt1{grid-area: cbrown;}
-
-        .txt2{
-            grid-area: cblue;
-            transform: rotate(45deg) translateX(-10vw);
-            float:right;
-            border:$border2;
-        }
-        .txt3{grid-area: cgreen;}
-        
-        .txt4{grid-area: corange;}
-
-        .list{
+        .txt1{
+            grid-area: cbrown;
+            position:relative;
             dl{
                 .list__title{
                     font-size: 2rem;
                     color:$fontDarkBrown;
                 }    
             
-                .list-item{
-                    font-size: 1.2rem;
+                .list__item{
+                    font-size: 1.5rem;
                     color: $fontDarkBrown;
-                    border:$border;
                 }
+            }            
+
+            .txt3{
+                grid-area: cgreen;
+                font-style: italic;
+                font-weight: normal;
+                width: 90%;
+                color: $fontDarkBrown;
+                text-align: center;
+            }
+
+            &::before{
+                content: '';
+                height: 100%;
+                background-color: orange;
+                width:4px;
+                display:inline;
+                position:absolute;
+                margin-left: 0;
+                left: -5%;
+            }
+        }
+
+        .txt2{
+            grid-area: cblue;
+            transform: rotate(45deg) translateX(-10vw);
+            float:right;
+        }
+        
+        .txt4{
+            grid-area: corange;
+            position:relative;
+            max-width: 90%;
+
+            dl{
+                .list__title{
+                    font-size: 2rem;
+                    color:$fontDarkBrown;
+                }    
+            
+                .list__item{
+                    font-size: 1.5rem;
+                    color: $fontDarkBrown;
+                    display:list-item;
+                    list-style-type: upper-roman;
+                    list-style-position: inside;
+                    text-align: left;
+                }
+            }
+
+            &::before{
+                content: '';
+                height: 100%;
+                background-color: orange;
+                width:4px;
+                display:inline;
+                position:absolute;
+                left: -3%;
             }
         }
     }
