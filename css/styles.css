@@ -272,7 +272,7 @@
       left: -5%; }
   .body--general main .txt2 {
     grid-area: cblue;
-    transform: rotate(45deg) translateX(-10vw);
+    transform: rotate(45deg) translateX(-5vw);
     float: right; }
   .body--general main .txt4 {
     grid-area: corange;
