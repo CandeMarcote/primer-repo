@@ -135,7 +135,7 @@
   justify-content: center; }
   .body section form fieldset {
     padding: 2em;
-    max-width: fit-content;
+    width: 70vw;
     margin: 10vw auto;
     font-size: 1.2rem;
     font-weight: bold;
