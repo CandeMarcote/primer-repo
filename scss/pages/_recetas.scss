@@ -2,12 +2,46 @@
 
 //recetas
 
-.body--general{
-    .recetas{
+.recetas{
+
+    .recetas__section--general{
+        margin: 0%;
+        display:flex;
+        justify-content: space-evenly;
+        padding:1em;
+
+        .recetas__img{
+            max-width: 20vw;
+            border-radius:5%;
+        }
+
+        .recetas__caption{
+            max-width:50%;
+            text-align: center;
+
+            h4{
+                font-size: 3rem;
+            }
+
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .recetas__main{
         width:80%;
+        display: flex;
         display: column;
         flex-wrap: wrap;
+        margin:5em auto;
 
-
+        .recetas__section--color1 {
+            background-color: antiquewhite;
+        }
+        .recetas__section--color2 {
+            background-color: bisque;
+            flex-direction: row-reverse;
+        }
     }
 }

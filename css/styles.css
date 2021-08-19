@@ -15,8 +15,8 @@
   background: #fbefce; }
 
 .body .header {
-  height: fit-content;
-  width: 100%; }
+  max-height: fit-content;
+  max-width: 100%; }
   .body .header .header__navbar {
     width: 90%;
     background-color: #38382e;
@@ -41,8 +41,8 @@
       color: #bd9d58; }
 
 .body--general .header {
-  height: fit-content;
-  width: 100%;
+  max-height: fit-content;
+  max-width: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/cheese-wallpaper-edited.jpg);
   background-size: cover;
   margin-bottom: 10vh;
@@ -76,8 +76,8 @@
       background-color: #fbefce;
       width: 90%; }
       .body--general .header .header__titleBox {
-        height: 90%;
-        width: fit-content;
+        max-height: 90%;
+        max-width: fit-content;
         margin: 5vh auto 10% 5vh; }
         .body--general .header .header__titleBox .header__titulo {
           color: #413E3A;
@@ -91,8 +91,8 @@
       width: 100%;
       margin-bottom: 5vh; }
       .body--general .header .header__titleBox {
-        height: 90%;
-        width: fit-content;
+        max-height: 90%;
+        max-width: fit-content;
         margin-bottom: 10%;
         padding: 0; }
         .body--general .header .header__titleBox .header__titulo {
@@ -181,15 +181,15 @@
 .body--general section {
   margin-bottom: 10vh; }
   .body--general section .carousel {
-    height: auto;
-    width: auto;
+    max-height: auto;
+    max-width: auto;
     border: red solid 2px; }
     .body--general section .carousel .carousel-inner .carousel-item {
       display: flex;
       justify-content: center; }
       .body--general section .carousel .carousel-inner .carousel-item .carousel__img--size {
-        height: 80vh;
-        width: 70vw; }
+        max-height: 80vh;
+        max-width: 70vw; }
       .body--general section .carousel .carousel-inner .carousel-item .carousel-caption {
         background: rgba(65, 62, 58, 0.5);
         border: red solid 2px; }
@@ -272,10 +272,33 @@
       position: absolute;
       left: -3%; }
 
-.body--general .recetas {
+.recetas .recetas__section--general {
+  margin: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em; }
+  .recetas .recetas__section--general .recetas__img {
+    max-width: 20vw;
+    border-radius: 5%; }
+  .recetas .recetas__section--general .recetas__caption {
+    max-width: 50%;
+    text-align: center; }
+    .recetas .recetas__section--general .recetas__caption h4 {
+      font-size: 3rem; }
+    .recetas .recetas__section--general .recetas__caption p {
+      font-size: 1.5rem; }
+
+.recetas .recetas__main {
   width: 80%;
+  display: flex;
   display: column;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin: 5em auto; }
+  .recetas .recetas__main .recetas__section--color1 {
+    background-color: antiquewhite; }
+  .recetas .recetas__main .recetas__section--color2 {
+    background-color: bisque;
+    flex-direction: row-reverse; }
 
 .body--general .text {
   font-size: 1.2em;

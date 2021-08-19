@@ -1,13 +1,23 @@
 // Mixins
 
 @mixin size($width, $height){
-    height: $height;
-    width: $width;
+    max-height: $height;
+    max-width: $width;
+}
+
+@mixin min-size($width, $height){
+    min-height: $height;
+    min-width: $width;
 }
 
 @mixin flex($flex, $center){
     display: $flex;
     justify-content: $center;
+}
+
+@mixin box($width, $height){
+    margin: $margin;
+    padding: $padding;
 }
 
 //Fonts
@@ -24,6 +34,9 @@ $titleColor:#BFA880;
 $darkBrown:#41331C;
 $fontDarkBrown:#413E3A;
 $DarkBrown05:rgba(65, 62, 58, 0.5);
+
+$margin:0%;
+$padding:0%;
 
 $flex:flex;
 $center:center;
