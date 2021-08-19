@@ -105,112 +105,7 @@
           text-align: center;
           width: 100%; } }
 
-.body--general main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: ". cbrown cbrown cbrown cblue" ". cgreen cgreen cgreen cblue" ". corange corange corange corange"; }
-  .body--general main .txt1 {
-    grid-area: cbrown;
-    position: relative; }
-    .body--general main .txt1 dl .list__title {
-      font-size: 2rem;
-      color: #413E3A; }
-    .body--general main .txt1 dl .list__item {
-      font-size: 1.5rem;
-      color: #413E3A; }
-    .body--general main .txt1 .txt3 {
-      grid-area: cgreen;
-      font-style: italic;
-      font-weight: normal;
-      width: 90%;
-      color: #413E3A;
-      text-align: center; }
-    .body--general main .txt1::before {
-      content: '';
-      height: 100%;
-      background-color: orange;
-      width: 4px;
-      display: inline;
-      position: absolute;
-      margin-left: 0;
-      left: -5%; }
-  .body--general main .txt2 {
-    grid-area: cblue;
-    transform: rotate(45deg) translateX(-5vw);
-    float: right; }
-  .body--general main .txt4 {
-    grid-area: corange;
-    position: relative;
-    max-width: 90%; }
-    .body--general main .txt4 dl .list__title {
-      font-size: 2rem;
-      color: #413E3A; }
-    .body--general main .txt4 dl .list__item {
-      font-size: 1.5rem;
-      color: #413E3A;
-      display: list-item;
-      list-style-type: upper-roman;
-      list-style-position: inside;
-      text-align: left; }
-    .body--general main .txt4::before {
-      content: '';
-      height: 100%;
-      background-color: orange;
-      width: 4px;
-      display: inline;
-      position: absolute;
-      left: -3%; }
-
-@media only screen and (max-width: 430px) {
-  .body--general main {
-    grid-template-areas: ". cbrown cbrown cbrown cbrown" ". cgreen cgreen cgreen ." ". corange corange corange corange" ". corange corange corange blue";
-    grid-row-gap: 15px; }
-    .body--general main .txt1 {
-      width: 75vw; }
-      .body--general main .txt1 dl {
-        width: 90%; }
-        .body--general main .txt1 dl .list__title {
-          font-size: 1.5rem; }
-        .body--general main .txt1 dl .list__item {
-          font-size: 1.2rem; }
-      .body--general main .txt1 .txt3 {
-        font-size: 1.2rem;
-        width: 90%; }
-    .body--general main .txt2 figure .list__img {
-      display: none; }
-    .body--general main .txt4 {
-      width: 90%; }
-      .body--general main .txt4 dl .list__title {
-        font-size: 1.5rem; }
-      .body--general main .txt4 dl .list__item {
-        font-size: 1.2rem; }
-      .body--general main .txt4::before {
-        left: -3%; } }
-
-@media only screen and (min-width: 431px) and (max-width: 920px) {
-  .body--general main {
-    grid-template-areas: ". cbrown cbrown cbrown cbrown" ". cgreen cgreen cgreen ." ". corange corange corange corange" ". corange corange corange blue";
-    grid-row-gap: 15px;
-    width: 90%; }
-    .body--general main .txt1 {
-      width: 75vw; }
-      .body--general main .txt1 dl {
-        width: 90%; }
-        .body--general main .txt1 dl .list__title {
-          font-size: 1.5rem; }
-        .body--general main .txt1 dl .list__item {
-          font-size: 1.2rem; }
-      .body--general main .txt1 .txt3 {
-        font-size: 1.2rem;
-        width: 100%; }
-    .body--general main .txt2 figure .list__img {
-      display: none; }
-    .body--general main .txt4 {
-      width: 100%; }
-      .body--general main .txt4 dl .list__title {
-        font-size: 1.5rem; }
-      .body--general main .txt4 dl .list__item {
-        font-size: 1.2rem; }
-      .body--general main .txt4::before {
-        left: -5%; } }
+.body--general .recetas {
+  width: 80%;
+  display: column;
+  flex-wrap: wrap; }

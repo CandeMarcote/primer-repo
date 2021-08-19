@@ -5,7 +5,7 @@
 
 
 .body--general{
-    main{
+    .elab{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
         grid-template-rows: repeat(4, auto);
@@ -50,10 +50,14 @@
             }
         }
 
-        .txt2{
-            grid-area: cblue;
-            transform: rotate(45deg) translateX(-5vw);
-            float:right;
+        .elab__img{
+            figure{
+                .list__img{
+                    grid-area: cblue;
+                    transform: rotate(45deg) translateX(-5vw);
+                    float:right;
+                }       
+            }     
         }
         
         .txt4{

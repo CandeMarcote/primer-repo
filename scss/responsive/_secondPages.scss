@@ -3,7 +3,7 @@
 //Elaboración
 @media only screen and (max-width:430px){
     .body--general{
-        main{
+        .elab{
             grid-template-areas:
             ". cbrown cbrown cbrown cbrown"
             ". cgreen cgreen cgreen ."
@@ -30,7 +30,7 @@
                 }
             }
 
-            .txt2{
+            .elab__img{
                 figure{
                     .list__img{                        
                         display: none;
@@ -64,7 +64,7 @@
 
 @media only screen and (min-width:431px) and (max-width:920px){
     .body--general{
-        main{
+        .elab{
             grid-template-areas:
             ". cbrown cbrown cbrown cbrown"
             ". cgreen cgreen cgreen ."
@@ -92,7 +92,7 @@
                 }
             }
 
-            .txt2{
+            .elab__img{
                 figure{
                     .list__img{                        
                         display: none;

@@ -3,54 +3,11 @@
 //recetas
 
 .body--general{
-    section{
-        .ListaRecetas{
-            list-style: none;
-            display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas:
-            "img1 img2 img3"
-            "img4 img5 im6";
-            justify-items: space-evenly;
-            margin: 5%;
-            height: 900px;
+    .recetas{
+        width:80%;
+        display: column;
+        flex-wrap: wrap;
 
-            li{
-                .RecetasBox{
-                    width: 370px;
-                    height: 440px;
-                    border: double 7px #413e41;
-                    padding: 20px 15px;
-                    text-align: center;
-                    margin-bottom: 50px;
-                    background-color: whitesmoke;
 
-                    .RecetasImg{
-                        width: 320px;
-                        height: 250px;
-                        border-radius: 5%;
-                        margin: 10px auto;
-                    }
-
-                    .img1{grid-area: img1;}
-                    .img2{grid-area: img2;}
-                    .img3{grid-area: img3;}
-                    .img4{grid-area: img4;}
-                    .img5{grid-area: img5;}
-                    .img6{grid-area: img6;}
-
-                    .RecetasBox p{
-                        font-size: 15px;
-                        font-family: 'Raleway', sans-serif;
-                        font-weight: bold;
-                        vertical-align: bottom;
-                    }
-                }
-            }
-        }
     }
 }
-
-
-
