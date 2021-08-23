@@ -91,14 +91,13 @@
                                 height: 10%;
                             }
                         }
-
-                        .form__button{
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-evenly;
-                            margin: 7% auto 2%;
-                        }
                     }
+                }
+                .form__button{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    margin: 2% auto;
                 }
             }
         }
