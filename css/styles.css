@@ -204,16 +204,52 @@
   justify-content: center; }
   .body--general section .lista {
     font-size: 1.2rem;
-    padding: 3%;
+    padding: 3% 3% 0% 3%;
     color: #413E3A;
     max-width: 90ch;
-    margin-bottom: 10vh;
     text-align: left;
     list-style-position: inside;
-    border: 7px #413E3A double;
-    background-color: whitesmoke; }
+    position: relative; }
     .body--general section .lista li {
       margin: 3%; }
+  .body--general section .lista::before {
+    content: '';
+    width: 3px;
+    height: 95%;
+    background-color: orange;
+    position: absolute;
+    left: 3%; }
+
+.body--general .cheese__map {
+  background-image: url(../../images/Cheese-assortment-Blue-cheese-swiss-Brie-parmesan.jpg);
+  width: 72vw;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 12vw);
+  grid-template-rows: repeat(6, 10vw);
+  grid-template-areas: ". . . . . ." ". brie brie . . ." ". gruyere gruyere gouda gouda ." ". . . azul azul ." ". parmesano parmesano . . ." ". . . . . .";
+  align-items: flex-end; }
+  .body--general .cheese__map .position {
+    background-color: rgba(200, 200, 200, 0.5);
+    border-radius: 5%;
+    transition: 0.25s;
+    text-align: center;
+    opacity: 0; }
+  .body--general .cheese__map .position:hover {
+    opacity: 1; }
+  .body--general .cheese__map .cheese__brie {
+    grid-area: brie; }
+  .body--general .cheese__map .cheese__gouda {
+    grid-area: gouda; }
+  .body--general .cheese__map .cheese__gruyere {
+    grid-area: gruyere; }
+  .body--general .cheese__map .cheese__parmesano {
+    grid-area: parmesano; }
+  .body--general .cheese__map .cheese__azul {
+    grid-area: azul; }
 
 .body--general .elab {
   display: grid;

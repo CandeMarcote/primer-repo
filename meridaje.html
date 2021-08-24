@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,7 @@
     <title>Queso | Meridajes</title>
 </head>
 <body class="body--general">
-    <header class="header"> <!--agregar las class="IndexHeader TitleContainerBox" -->
+    <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light header__navbar">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -29,7 +30,7 @@
             </div>
           </nav>
 
-        <div class="header__titleBox"> <!--Quitar este div despues-->
+        <div class="header__titleBox">
             <h1 class="header__titulo">Acompañando un buen queso</h1>
             <p class="header__subtitulo">A pesar de ser un ingrediente versátil, también es una delicia que vale la pena disfrutar en sí mismo. En esta sección te enseñamos a disfrutar de una tabla de quesos como si fueras todo un connoisseur!</p>
         </div>
@@ -47,32 +48,50 @@
         </ol>
     </section>
 
-    <section clase="mapa">
-
-        <div class="mapa__txt1"> <!--estas clases las voy a usar mas tarde pero todavia estoy pensando como hacer un mapa "interactivo" sin JS-->
+    <section clase="cheese__map">
+        
+        <div class="cheese__brie position">
             <h3>Brie</h3>
             <p>Es un queso de origen francés, de pasta blanda, hecho con leche de vaca, con un proceso demaduración corta. Para este tipo de quesos se acompaña muy bien de vinos blancos secos, como el Chardonnay. También puede acompañarse con frutos rojos, como frutillas y grosellas, o dulce de frambuesa.</p>
         </div>
-        <div class="mapa__txt2">
+    
+        <div class="cheese__gouda position">
             <h3>Gouda</h3>
             <p>Este queso es de origen holandés, semiduro, hecho con leche de vaca. Va muy bien con vinos tintos, como el Merlot, y frutas ácidas como la pera o las manzanas.</p>
         </div>
-        <div class="mapa__txt3">
+    
+        <div class="cheese__gruyere position">
             <h3>Gruyere</h3>
             <p>Es un queso de pasta semidura proveniente de la región de Gruyère, en Suiza. A este queso se lo puede acompañar con vinos blancos (de preferencia Chenin Blanc o Savignon Blanc), manzanas verdes y dulce de pera.</p>
         </div>
-        <div class="mapa__txt4">
+    
+        <div class="cheese__parmesano position">
             <h3>Parmesano</h3>
             <p>Este queso proviene de la región de Sicilia, Italia. Es un queso duro, con un tiempo de maduración prolongado y sabores intensos. Se lo puede acompañar con vinos tintos, como el Lambrusco, manzanas dulces, citricos y dulce de cayote.</p>
         </div>
-        <div class="mapa__txt5">
+    
+        <div class="cheese__azul position">
             <h3>Azul</h3>
             <p>Los primeros quesos azules surgieron de la región de Roquefort, en Francia. Pero tras haberse patentado el nombre "Roquefort", se debió cambiarle el nombre dependiendo de la región; en Argentina, se le llama "queso azul". Se recomienda acompañar este queso con sabores dulces: vinos blancos de cosecha tardía, higos frescos y miel.</p>
         </div>
     </section>
 
     <footer class="footer">
-        <a class="footer__a" href="my-portfolio.html">By Cande</a>
+        <div class="footer__portfolio footer--flex">
+            <h6>Datos de contacto</h6>
+            <strong>Creado por Candelaria Marcote</strong>
+            <div>E-mail <a class="footer__a" href="candemarcote@gmail.com">candemarcote@gmail.com</a></div>
+            <div>whatsapp <a class="footer__a" href="https://wa.me/+542995041172">+542995041172</a></div>
+            <div>Ver <a class="footer__a" href="my-portfolio.html">portafolio</a></div>
+        </div>
+
+        <div class="footer__icons footer--flex">
+            <div>Icons made by <a class="footer__a" href="https://www.flaticon.com/authors/pause08" title="Pause08">Pause08</a></div>
+            <div>Icons made by <a class="footer__a" href="https://www.flaticon.com/authors/nhor-phai" title="Nhor Phai">Nhor Phai</a></div>
+            <div>Icons made by <a class="footer__a" href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a></div>
+            <div>Icons made by <a class="footer__a" href="https://www.freepik.com" title="Freepik">Freepik</a></div>
+            <div> from <a class="footer__a" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
