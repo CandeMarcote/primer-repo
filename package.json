@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
+    "@popperjs/core": "^2.10.0",
     "bootstrap": "^5.1.0",
     "bootstrap-scss": "^5.1.0",
     "node-sass": "^6.0.1",
@@ -11,8 +12,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/main.scss css/styles.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "build-sass": "node-sass --include-path scss scss/main.scss scss/styles.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
   },
   "author": "",
   "license": "ISC",

@@ -179,6 +179,30 @@
       margin: 2% auto; }
 
 .body--general section {
+<<<<<<< HEAD
+=======
+  margin-bottom: 10px;
+}
+  .body--general section .carousel {
+    width: 70%;
+    height: 100%;
+    border: red solid 2px; }
+    .body--general section .carousel .carousel-inner .carousel-item {
+      justify-content: center; }
+      .body--general section .carousel .carousel-inner .carousel-item .carousel__img--size {
+        max-height: 80vh;
+        max-width: 70vw; }
+      .body--general section .carousel .carousel-inner .carousel-item .carousel-caption {
+        background: rgba(65, 62, 58, 0.5);
+        border: red solid 2px; }
+        .body--general section .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+          color: #e6d07a; }
+        .body--general section .carousel .carousel-inner .carousel-item .carousel-caption p {
+          color: #e6d07a;
+          padding: auto; }
+
+.body--general section {
+>>>>>>> a5a5664eb7e70eb2ac34c58aee5e9cf3252cb13a
   display: flex;
   justify-content: center; }
   .body--general section .lista {
@@ -209,7 +233,12 @@
   display: grid;
   grid-template-columns: repeat(6, 12vw);
   grid-template-rows: repeat(6, 10vw);
-  grid-template-areas: ". . . . . ." ". brie brie . . ." ". gruyere gruyere gouda gouda ." ". . . azul azul ." ". parmesano parmesano . . ." ". . . . . .";
+  grid-template-areas: ". . . . . ."
+ ". brie brie . . ."
+ ". gruyere gruyere gouda gouda ."
+ ". . . azul azul ."
+ ". parmesano parmesano . . ."
+ ". . . . . .";
   align-items: flex-end; }
   .body--general .cheese__map .position {
     background-color: rgba(200, 200, 200, 0.5);
@@ -234,7 +263,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: ". cbrown cbrown cbrown cblue" ". cgreen cgreen cgreen cblue" ". corange corange corange corange"; }
+  grid-template-areas: ". cbrown cbrown cbrown cblue"
+ ". cgreen cgreen cgreen cblue"
+ ". corange corange corange corange"; }
   .body--general .elab .txt1 {
     grid-area: cbrown;
     position: relative; }
@@ -538,7 +569,10 @@
 
 @media only screen and (max-width: 430px) {
   .body--general .elab {
-    grid-template-areas: ". cbrown cbrown cbrown cbrown" ". cgreen cgreen cgreen ." ". corange corange corange corange" ". corange corange corange blue";
+    grid-template-areas: ". cbrown cbrown cbrown cbrown"
+ ". cgreen cgreen cgreen ."
+ ". corange corange corange corange"
+ ". corange corange corange blue";
     grid-row-gap: 15px; }
     .body--general .elab .txt1 {
       width: 75vw; }
@@ -564,7 +598,10 @@
 
 @media only screen and (min-width: 431px) and (max-width: 920px) {
   .body--general .elab {
-    grid-template-areas: ". cbrown cbrown cbrown cbrown" ". cgreen cgreen cgreen ." ". corange corange corange corange" ". corange corange corange blue";
+    grid-template-areas: ". cbrown cbrown cbrown cbrown"
+ ". cgreen cgreen cgreen ."
+ ". corange corange corange corange"
+ ". corange corange corange blue";
     grid-row-gap: 15px;
     width: 90%; }
     .body--general .elab .txt1 {
