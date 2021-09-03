@@ -9,10 +9,11 @@
         .carousel{
             @include size(auto, auto);
             border:$border;
+            width: $carousel-width;
+            height: $carousel-height;
             
             .carousel-inner{
                 .carousel-item{
-                    @include flex($flex, $center);
 
                     .carousel__img--size{
                         @include size(70vw, 80vh);
