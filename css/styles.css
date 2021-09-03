@@ -315,24 +315,46 @@
     background-color: bisque;
     flex-direction: row-reverse; }
 
-.body--general .text {
-  font-size: 1.2em;
-  margin: 2em;
-  padding: 2em;
-  text-align: center;
+.body--general .cultura {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around; }
-  .body--general .text dl dt {
-    font-size: 1.5em;
-    font-weight: bolder;
-    padding: 30px 10px 10px;
-    color: #413E3A; }
-  .body--general .text dl dd {
-    text-indent: 15px;
-    padding: 0 1.5em;
-    margin-bottom: 2em; }
+  font-size: 1.2em;
+  margin: 2em auto;
+  padding: 2em;
+  max-width: 80vw; }
+  .body--general .cultura h2 {
+    margin: 0 auto; }
+  .body--general .cultura h3 {
+    margin: 1rem auto 3rem; }
+  .body--general .cultura .cultura__container {
+    padding: 0 0 0 1em;
+    border-right: orange solid 3px;
+    margin: 1.5em auto; }
+    .body--general .cultura .cultura__container .cultura__title {
+      font-size: 1.5em;
+      font-weight: bolder;
+      color: #413E3A;
+      display: block;
+      margin: 0 0 0 1em; }
+    .body--general .cultura .cultura__container > div {
+      max-width: 65vw;
+      margin: 1rem 0 0 0;
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: nowrap;
+      justify-content: flex-end; }
+      .body--general .cultura .cultura__container > div .cultura__text p {
+        text-indent: 1em;
+        max-width: 70ch;
+        margin: 0 1rem;
+        text-align: justify; }
+      .body--general .cultura .cultura__container > div figure svg {
+        margin-top: 1rem;
+        width: 10vw;
+        border: 2px black solid;
+        display: inline; }
 
 .body .footer {
   background-color: #38382e;
