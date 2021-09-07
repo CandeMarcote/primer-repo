@@ -2,32 +2,39 @@
 
 //historia
 
-.body--general{
-    section{        
+.historia{
+    .historia__section{        
         margin-bottom: $marginBottom;
+        @include flex($flex, $center);
 
         .carousel{
-            @include size(auto, auto);
-            border:$border;
-            width: $carousel-width;
-            height: $carousel-height;
+            @include size($carousel-width, $carousel-height);
+            border: black double 3px;
             
             .carousel-inner{
+                &>.active{width:100%;}
+                &>.prev{width:100%;}
+                &>.next{width:100%;}
                 .carousel-item{
-
                     .carousel__img--size{
-                        @include size(70vw, 80vh);
+                        @include size($carousel-width, $carousel-height);
                     }
 
-                    .carousel-caption{
+                    .carousel__textBox{
                         background:$DarkBrown05;
-                        border:$border;
+                        margin:0;
+                        width:100%;
+                        left:0%;
 
-                        h5{color:$subtitleColor;}
+                        h5{
+                            color:$subtitleColor;
+                            margin:0.5em
+                        }
 
                         p{
                             color:$subtitleColor;
-                            padding: auto;
+                            padding: 0;
+                            margin: 0.5em;
                         }
                     }
                     

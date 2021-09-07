@@ -1,0 +1,75 @@
+
+
+//meridajes
+
+.meridaje{
+    .meridaje__section{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        .meridaje__title{
+            display:block;
+            width:100%;
+            text-align: center;
+            font-weight: bold;
+            color:$fontDarkBrown;
+            margin: 1em auto;
+        }
+        .lista{
+            align-self: center;
+            font-size: 1.2rem;
+            color: $fontDarkBrown;
+            max-width: 90ch;
+            text-align: left;
+            list-style-position: inside;
+            border-left: $border-left;
+            padding: 0 1em 0.5em;
+            
+            li{
+                margin: 3%;
+            }
+        }
+    }
+
+    .meridaje__main--general{
+        margin: 0%;
+        display:flex;
+        justify-content: space-evenly;
+        padding:1em;
+
+        .meridaje__img{
+            max-width: 20vw;
+            max-height:15vw;
+            border-radius:5%;
+        }
+
+        .meridaje__caption{
+            max-width:50%;
+            text-align: center;
+
+            h4{
+                font-size: 2rem;
+            }
+
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .meridaje__main{
+        width:80%;
+        display: flex;
+        display: column;
+        flex-wrap: wrap;
+        margin:5em auto;
+
+        .meridaje__main--color1 {
+            background-color: antiquewhite;
+        }
+        .meridaje__main--color2 {
+            background-color: bisque;
+            flex-direction: row-reverse;
+        }
+    }
+}

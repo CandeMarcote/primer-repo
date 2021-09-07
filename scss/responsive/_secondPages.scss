@@ -4,90 +4,22 @@
 @media only screen and (max-width:430px){
     .body--general{
         .elab{
-            grid-template-areas:
-            ". cbrown cbrown cbrown cbrown"
-            ". cgreen cgreen cgreen ."
-            ". corange corange corange corange"
-            ". corange corange corange blue";
-            grid-row-gap: 15px;
-
-            .txt1{
+            .list{
                 width:75vw;
+                margin:0;
                 dl{
-                    width:90%;
+                    width:100%;
                     .list__title{
-                        font-size: 1.5rem;
-                    }    
+                        font-size: 1rem;
+                    }
                 
                     .list__item{
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                     }
                 }            
     
-                .txt3{
-                    font-size: 1.2rem;
-                    width: 90%;
-                }
-            }
-
-            .elab__img{
-                figure{
-                    .list__img{                        
-                        display: none;
-                    }
-                }
-            }
-
-            .txt4{
-                width:90%;
-    
-                dl{
-                    .list__title{
-                        font-size: 1.5rem;
-                    }    
-                
-                    .list__item{
-                        font-size: 1.2rem;
-                    }
-                }
-
-                &::before{
-                    left:-3%;
-                }
-            }
-        }
-    }
-}
-
-//TABLET STYLE
-//elaboración
-
-@media only screen and (min-width:431px) and (max-width:920px){
-    .body--general{
-        .elab{
-            grid-template-areas:
-            ". cbrown cbrown cbrown cbrown"
-            ". cgreen cgreen cgreen ."
-            ". corange corange corange corange"
-            ". corange corange corange blue";
-            grid-row-gap: 15px;
-            width:90%;
-
-            .txt1{
-                width:75vw;
-                dl{
-                    width:90%;
-                    .list__title{
-                        font-size: 1.5rem;
-                    }    
-                
-                    .list__item{
-                        font-size: 1.2rem;
-                    }
-                }            
-    
-                .txt3{
-                    font-size: 1.2rem;
+                .elab__text{
+                    font-size: 1rem;
                     width: 100%;
                 }
             }
@@ -95,15 +27,190 @@
             .elab__img{
                 figure{
                     .list__img{                        
-                        display: none;
+                        transform:rotate(45deg) translate(15vw,25vw);
                     }
                 }
             }
 
-            .txt4{
+            .elab__secondList{
                 width:100%;
     
                 dl{
+                    .list__title{
+                        font-size: 1.2rem;
+                    }    
+                
+                    .list__item{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+//recetas
+
+@media only screen and (max-width:430px){
+    .recetas{
+
+        .recetas__section--general{
+            display:block;
+    
+            .recetas__img{
+                max-width: 40vw;
+                max-height:auto;
+                float:right;
+                margin: 1em;
+            }
+    
+            .recetas__caption{
+                max-width:90%;
+    
+                h4{
+                    font-size: 1.5rem;
+                    text-align: left;
+                }
+    
+                p{
+                    font-size: 1rem;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+    //historia
+    
+@media only screen and (max-width:430px){
+
+    .historia{
+        .historia__section{
+            .carousel{
+                .carousel-inner{
+                        .carousel__textBox{
+                            h5{
+                                font-size: 1.2rem;
+                            }
+
+                            p{
+                                font-size: 1rem;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Meridaje
+
+@media only screen and (max-width:900px){
+    .meridaje{
+        .meridaje__main{
+            .meridaje__title{
+                font-size: 1.5rem;
+            }
+            .lista{
+                max-width:90%;
+                font-size: 1rem;
+                li{
+                    font-size: 1rem;
+                }
+            }
+        }
+        .meridaje__main--general{
+            display:block;
+    
+            .meridaje__img{
+                display: block;
+                max-width: 40vw;
+                max-height:auto;
+                float:right;
+                margin: 1em;
+            }
+    
+            .meridaje__caption{
+                max-width:90%;
+                display:block;
+    
+                h4{
+                    font-size: 1.5rem;
+                    text-align: left;
+                }
+    
+                p{
+                    font-size: 1rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+
+//cultura
+
+@media only screen and (max-width:430px){
+    .cultura{
+        .cultura__section{
+            padding:0;
+            width:90%;
+            font-size: 10px;
+
+            h2{
+                margin: 2em auto;
+                font-weight: bold;
+                text-align: center;
+            }
+    
+            .cultura__contenedor{
+                width:100%;
+                padding: 0 0 0 1rem;
+                margin:1.5em;
+                display:block;
+    
+                .cultura__title{
+                    font-size: 1.2rem;
+                }
+                
+                &>div{
+                    display:block;
+                    .cultura__text{
+                        p{
+                            text-indent:0;
+                            font-size:0.8rem;
+                        }
+                    }
+                }
+
+                figure{
+                    svg{
+                        width: 20vw;
+                        float: left;
+                        margin: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//TABLET STYLE
+//elaboración
+
+@media only screen and (min-width:431px) and (max-width:920px){
+    .body--general{
+        .elab{
+            width:90%;
+            .elab__list{
+                dl{
+                    width:90%;
                     .list__title{
                         font-size: 1.5rem;
                     }    
@@ -111,10 +218,33 @@
                     .list__item{
                         font-size: 1.2rem;
                     }
+                }            
+    
+                .elab__text{
+                    font-size: 1.2rem;
+                    width: 100%;
                 }
+            }
 
-                &::before{
-                    left:-5%;
+            .elab__img{
+                figure{
+                    .list__img{                      
+                        transform: rotate(45deg) translate(vw, 15vw);
+                    }
+                }
+            }
+
+            .elab__secondList{
+                width:100%;
+    
+                dl{
+                    .list__title{
+                        font-size: 1.5rem;
+                    }
+                
+                    .list__item{
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }

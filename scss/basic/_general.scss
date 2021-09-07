@@ -6,13 +6,28 @@
     box-sizing: border-box;
 }
 
+
+//INDEX
+//DESKTOP
 .body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/bg1.jpg) fixed 100%;
     background-size: cover;
     background-repeat: no-repeat;    
     font-family: 'Raleway', sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+// MOBILE STYLE
+//Index
+@media only screen and (max-width:430px){
+    .body{
+        background-image: none;
+        background-color: $bgColor;
+    }
 }
 
+//other pages
 .body--general{
     background: $bgColor;
 }

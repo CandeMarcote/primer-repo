@@ -7,10 +7,10 @@
         @include size(100%, fit-content);
     
         .header__navbar{
-            width: 90%;
+            width: 100%;
             background-color: $bgNavBar;
             display: block;
-            margin: 0 auto;
+            padding: 2rem auto;
             
             .header__a{
                 font-weight: bold;
@@ -24,11 +24,11 @@
         }
     
         .header__titleBox{
-            width: 80ch;
-            margin: 10vh auto 15vh 5vh;
+            width: 50%;
+            margin: 10vh auto 15vh;
     
             .header__title{
-                font-size: 5rem;
+                font-size: 4rem;
                 color: hsl(48, 40%, 80%);
                 font-weight: lighter;
                 font-family: 'Fredericka the Great', cursive;
@@ -37,6 +37,64 @@
             .header__subtitle {
                 font-size: 1.2rem;
                 color: #bd9d58;
+                max-width: 60ch;
+            }
+        }
+    }
+}
+
+
+
+//MOBILE STYLE
+
+@media only screen and (max-width: 430px){
+    .body{
+        .header{
+            margin: 10px auto; 
+
+            .header__titleBox{
+                max-width: 90%;
+                margin: 10px auto;
+                text-align: center;
+            
+                .header__title{
+                    font-size: 3rem;
+                    color:$fontDarkBrown;
+                }
+
+                .header__subtitle{
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    max-width:90%;
+                }
+            }
+        }
+    }
+}
+
+//TABLET STYLE
+
+@media only screen and (min-width: 431px) and (max-width: 920px) {
+    .body{
+        .header{
+            width:100%;
+            margin: 10px auto; 
+
+            .header__titleBox{
+                max-width: 90%;
+                margin: 10% auto;
+                text-align: center;
+            
+                .header__title{
+                    font-size: 3.5rem;
+                    color:$bgColor;
+                }
+
+                .header__subtitle{
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    max-width:90%;
+                }
             }
         }
     }
@@ -54,7 +112,7 @@
         border-bottom: #BFA880 3px solid;
     
         .header__navbar{
-            width: 90%;
+            width: 100%;
             background-color: hsl(60, 10, 20);
             display: block;
             margin: 0 auto;
@@ -72,11 +130,11 @@
         }
     
         .header__titleBox{
-            width: 80ch;
-            margin: 5vh auto 15vh 5vh;
+            width: 90%;
+            margin: 5vh auto 15vh;
     
             .header__titulo{
-                font-size: 5rem;
+                font-size: 3.5em;
                 color: #e0d8b8;
                 font-weight: lighter;
                 font-family: 'Fredericka the Great', cursive;
@@ -85,27 +143,28 @@
             .header__subtitulo {
                 font-size: 1.2rem;
                 color: #bd9d58;
+                max-width:70ch;
             }
         }
         //MOBILE STYLE
         @media only screen and (max-width:430px) {
-            background-image: none;
-            background-color: $bgColor;
-            width: 90%;
+            width: 100%;
+            margin:0;
 
             .header__titleBox{
                 @include size(fit-content, 90%);
-                margin: 5vh auto 10% 5vh;
+                margin: 5vh auto 10%;
 
                 .header__titulo{
-                    color: $fontDarkBrown;
-                    font-size: 3rem;
+                    color: $titleColor;
+                    font-size: 2rem;
                     text-align: center;
                 }
 
                 .header__subtitulo{
-                    font-size: 1.2rem;                    
+                    font-size: 1rem;                    
                     text-align: center;
+                    max-width: 90%;
                 }
             }
         }
@@ -124,13 +183,13 @@
                     text-align: center;
                     margin:0;
                     width: 100%;
-
+                    color:$titleColor;
                 }
 
                 .header__subtitulo{
                     font-size: 1.2rem;
                     text-align: center;
-                    width: 100%;
+                    max-width: 90%;
                 }
             }
         }

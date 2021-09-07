@@ -9,7 +9,15 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/bg1.jpg) fixed 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+@media only screen and (max-width: 430px) {
+  .body {
+    background-image: none;
+    background-color: #fbefce; } }
 
 .body--general {
   background: #fbefce; }
@@ -18,10 +26,10 @@
   max-height: fit-content;
   max-width: 100%; }
   .body .header .header__navbar {
-    width: 90%;
+    width: 100%;
     background-color: #38382e;
     display: block;
-    margin: 0 auto; }
+    padding: 2rem auto; }
     .body .header .header__navbar .header__a {
       font-weight: bold;
       color: #bd9d58;
@@ -29,16 +37,46 @@
       .body .header .header__navbar .header__a:hover {
         border-bottom: 2px solid #bd9d58; }
   .body .header .header__titleBox {
-    width: 80ch;
-    margin: 10vh auto 15vh 5vh; }
+    width: 90%;
+    margin: 10vh auto 15vh; }
     .body .header .header__titleBox .header__title {
-      font-size: 5rem;
+      font-size: 4rem;
       color: #e0d8b8;
       font-weight: lighter;
       font-family: 'Fredericka the Great', cursive; }
     .body .header .header__titleBox .header__subtitle {
       font-size: 1.2rem;
-      color: #bd9d58; }
+      color: #bd9d58;
+      max-width: 90%; }
+
+@media only screen and (max-width: 430px) {
+  .body .header {
+    margin: 10px auto; }
+    .body .header .header__titleBox {
+      max-width: 90%;
+      margin: 10px auto;
+      text-align: center; }
+      .body .header .header__titleBox .header__title {
+        font-size: 3rem;
+        color: #413E3A; }
+      .body .header .header__titleBox .header__subtitle {
+        font-size: 1.2rem;
+        font-weight: bold; } }
+
+@media only screen and (min-width: 431px) and (max-width: 920px) {
+  .body .header {
+    width: 100%;
+    margin: 10px auto; }
+    .body .header .header__titleBox {
+      max-width: 90%;
+      margin: 10% auto;
+      text-align: center; }
+      .body .header .header__titleBox .header__title {
+        font-size: 3.5rem;
+        color: #fbefce; }
+      .body .header .header__titleBox .header__subtitle {
+        font-size: 1.2rem;
+        font-weight: bold; } }
 
 .body--general .header {
   max-height: fit-content;
@@ -48,7 +86,7 @@
   margin-bottom: 10vh;
   border-bottom: #BFA880 3px solid; }
   .body--general .header .header__navbar {
-    width: 90%;
+    width: 100%;
     background-color: #38382e;
     display: block;
     margin: 0 auto; }
@@ -60,32 +98,33 @@
       .body--general .header .header__navbar .header__a:hover {
         border-bottom: 2px solid #bd9d58; }
   .body--general .header .header__titleBox {
-    width: 80ch;
-    margin: 5vh auto 15vh 5vh; }
+    width: 90%;
+    margin: 5vh auto 15vh; }
     .body--general .header .header__titleBox .header__titulo {
-      font-size: 5rem;
+      font-size: 3.5em;
       color: #e0d8b8;
       font-weight: lighter;
       font-family: 'Fredericka the Great', cursive; }
     .body--general .header .header__titleBox .header__subtitulo {
       font-size: 1.2rem;
-      color: #bd9d58; }
+      color: #bd9d58;
+      width: 70ch; }
   @media only screen and (max-width: 430px) {
     .body--general .header {
-      background-image: none;
-      background-color: #fbefce;
-      width: 90%; }
+      width: 100%;
+      margin: 0; }
       .body--general .header .header__titleBox {
         max-height: 90%;
         max-width: fit-content;
-        margin: 5vh auto 10% 5vh; }
+        margin: 5vh auto 10%; }
         .body--general .header .header__titleBox .header__titulo {
-          color: #413E3A;
-          font-size: 3rem;
+          color: #BFA880;
+          font-size: 2rem;
           text-align: center; }
         .body--general .header .header__titleBox .header__subtitulo {
-          font-size: 1.2rem;
-          text-align: center; } }
+          font-size: 1rem;
+          text-align: center;
+          max-width: 90%; } }
   @media only screen and (min-width: 431px) and (max-width: 920px) {
     .body--general .header {
       width: 100%;
@@ -99,11 +138,12 @@
           font-size: 3.5rem;
           text-align: center;
           margin: 0;
-          width: 100%; }
+          width: 100%;
+          color: #BFA880; }
         .body--general .header .header__titleBox .header__subtitulo {
           font-size: 1.2rem;
           text-align: center;
-          width: 100%; } }
+          max-width: 90%; } }
 
 .body .main {
   display: flex;
@@ -178,134 +218,125 @@
       justify-content: space-evenly;
       margin: 2% auto; }
 
-.body--general section {
-  margin-bottom: 10vh; }
-  .body--general section .carousel {
-    max-height: auto;
-    max-width: auto;
-    border: red solid 2px;
-    width: 70%;
-    height: 100%; }
-    .body--general section .carousel .carousel-inner .carousel-item .carousel__img--size {
-      max-height: 80vh;
-      max-width: 70vw; }
-    .body--general section .carousel .carousel-inner .carousel-item .carousel-caption {
-      background: rgba(65, 62, 58, 0.5);
-      border: red solid 2px; }
-      .body--general section .carousel .carousel-inner .carousel-item .carousel-caption h5, .body--general section .carousel .carousel-inner .carousel-item .carousel-caption .h5 {
-        color: #e6d07a; }
-      .body--general section .carousel .carousel-inner .carousel-item .carousel-caption p {
-        color: #e6d07a;
-        padding: auto; }
-
-.body--general section {
+.historia .historia__section {
+  margin-bottom: 10vh;
   display: flex;
   justify-content: center; }
-  .body--general section .lista {
+  .historia .historia__section .carousel {
+    max-height: 538px;
+    max-width: 726px;
+    border: black double 3px; }
+    .historia .historia__section .carousel .carousel-inner > .active {
+      width: 100%; }
+    .historia .historia__section .carousel .carousel-inner > .prev {
+      width: 100%; }
+    .historia .historia__section .carousel .carousel-inner > .next {
+      width: 100%; }
+    .historia .historia__section .carousel .carousel-inner .carousel-item .carousel__img--size {
+      max-height: 538px;
+      max-width: 726px; }
+    .historia .historia__section .carousel .carousel-inner .carousel-item .carousel__textBox {
+      background: rgba(65, 62, 58, 0.65);
+      margin: 0;
+      width: 100%;
+      left: 0%; }
+      .historia .historia__section .carousel .carousel-inner .carousel-item .carousel__textBox h5, .historia .historia__section .carousel .carousel-inner .carousel-item .carousel__textBox .h5 {
+        color: #e6d07a;
+        margin: 0.5em; }
+      .historia .historia__section .carousel .carousel-inner .carousel-item .carousel__textBox p {
+        color: #e6d07a;
+        padding: 0;
+        margin: 0.5em; }
+
+.meridaje .meridaje__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .meridaje .meridaje__section .meridaje__title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #413E3A;
+    margin: 1em auto; }
+  .meridaje .meridaje__section .lista {
+    align-self: center;
     font-size: 1.2rem;
-    padding: 3% 3% 0% 3%;
     color: #413E3A;
     max-width: 90ch;
     text-align: left;
     list-style-position: inside;
-    position: relative; }
-    .body--general section .lista li {
+    border-left: orange 3px solid;
+    padding: 0 1em 0.5em; }
+    .meridaje .meridaje__section .lista li {
       margin: 3%; }
-  .body--general section .lista::before {
-    content: '';
-    width: 3px;
-    height: 95%;
-    background-color: orange;
-    position: absolute;
-    left: 3%; }
 
-.body--general .cheese__map {
-  background-image: url(../../images/Cheese-assortment-Blue-cheese-swiss-Brie-parmesan.jpg);
-  width: 72vw;
-  background-size: cover;
-  position: relative;
-  background-repeat: no-repeat;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(6, 12vw);
-  grid-template-rows: repeat(6, 10vw);
-  grid-template-areas: ". . . . . ." ". brie brie . . ." ". gruyere gruyere gouda gouda ." ". . . azul azul ." ". parmesano parmesano . . ." ". . . . . .";
-  align-items: flex-end; }
-  .body--general .cheese__map .position {
-    background-color: rgba(200, 200, 200, 0.5);
-    border-radius: 5%;
-    transition: 0.25s;
-    text-align: center;
-    opacity: 0; }
-  .body--general .cheese__map .position:hover {
-    opacity: 1; }
-  .body--general .cheese__map .cheese__brie {
-    grid-area: brie; }
-  .body--general .cheese__map .cheese__gouda {
-    grid-area: gouda; }
-  .body--general .cheese__map .cheese__gruyere {
-    grid-area: gruyere; }
-  .body--general .cheese__map .cheese__parmesano {
-    grid-area: parmesano; }
-  .body--general .cheese__map .cheese__azul {
-    grid-area: azul; }
+.meridaje .meridaje__main--general {
+  margin: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em; }
+  .meridaje .meridaje__main--general .meridaje__img {
+    max-width: 20vw;
+    max-height: 15vw;
+    border-radius: 5%; }
+  .meridaje .meridaje__main--general .meridaje__caption {
+    max-width: 50%;
+    text-align: center; }
+    .meridaje .meridaje__main--general .meridaje__caption h4, .meridaje .meridaje__main--general .meridaje__caption .h4 {
+      font-size: 2rem; }
+    .meridaje .meridaje__main--general .meridaje__caption p {
+      font-size: 1.2rem; }
 
-.body--general .elab {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: ". cbrown cbrown cbrown cblue" ". cgreen cgreen cgreen cblue" ". corange corange corange corange"; }
-  .body--general .elab .txt1 {
-    grid-area: cbrown;
-    position: relative; }
-    .body--general .elab .txt1 dl .list__title {
-      font-size: 2rem;
-      color: #413E3A; }
-    .body--general .elab .txt1 dl .list__item {
+.meridaje .meridaje__main {
+  width: 80%;
+  display: flex;
+  display: column;
+  flex-wrap: wrap;
+  margin: 5em auto; }
+  .meridaje .meridaje__main .meridaje__main--color1 {
+    background-color: antiquewhite; }
+  .meridaje .meridaje__main .meridaje__main--color2 {
+    background-color: bisque;
+    flex-direction: row-reverse; }
+
+.elaboracion .elab {
+  max-width: 70%;
+  margin: 0 auto 2rem; }
+  .elaboracion .elab .list {
+    border-left: orange 3px solid;
+    padding-left: 2rem;
+    margin-bottom: 4em; }
+    .elaboracion .elab .list dl .list__title {
       font-size: 1.5rem;
       color: #413E3A; }
-    .body--general .elab .txt1 .txt3 {
-      grid-area: cgreen;
+    .elaboracion .elab .list dl .list__item {
+      font-size: 1.2rem;
+      color: #413E3A; }
+    .elaboracion .elab .list .elab__text {
+      font-size: 1rem;
       font-style: italic;
       font-weight: normal;
-      width: 90%;
+      max-width: 60ch;
       color: #413E3A;
       text-align: center; }
-    .body--general .elab .txt1::before {
-      content: '';
-      height: 100%;
-      background-color: orange;
-      width: 4px;
-      display: inline;
-      position: absolute;
-      margin-left: 0;
-      left: -5%; }
-  .body--general .elab .elab__img figure .list__img {
-    grid-area: cblue;
-    transform: rotate(45deg) translateX(-5vw);
-    float: right; }
-  .body--general .elab .txt4 {
-    grid-area: corange;
-    position: relative;
-    max-width: 90%; }
-    .body--general .elab .txt4 dl .list__title {
-      font-size: 2rem;
-      color: #413E3A; }
-    .body--general .elab .txt4 dl .list__item {
+  .elaboracion .elab .elab__img figure .list__img {
+    transform: rotate(45deg) translate(-15vw, 15vw);
+    float: right;
+    width: 15vw; }
+  .elaboracion .elab .elab__secondList dl {
+    border-left: orange 3px solid;
+    padding-left: 2rem; }
+    .elaboracion .elab .elab__secondList dl .list__title {
       font-size: 1.5rem;
+      color: #413E3A; }
+    .elaboracion .elab .elab__secondList dl .list__item {
+      font-size: 1.2rem;
       color: #413E3A;
       display: list-item;
       list-style-type: upper-roman;
       list-style-position: inside;
       text-align: left; }
-    .body--general .elab .txt4::before {
-      content: '';
-      height: 100%;
-      background-color: orange;
-      width: 4px;
-      display: inline;
-      position: absolute;
-      left: -3%; }
 
 .recetas .recetas__section--general {
   margin: 0%;
@@ -314,14 +345,15 @@
   padding: 1em; }
   .recetas .recetas__section--general .recetas__img {
     max-width: 20vw;
+    max-height: 15vw;
     border-radius: 5%; }
   .recetas .recetas__section--general .recetas__caption {
     max-width: 50%;
     text-align: center; }
     .recetas .recetas__section--general .recetas__caption h4, .recetas .recetas__section--general .recetas__caption .h4 {
-      font-size: 3rem; }
+      font-size: 2rem; }
     .recetas .recetas__section--general .recetas__caption p {
-      font-size: 1.5rem; }
+      font-size: 1.2rem; }
 
 .recetas .recetas__main {
   width: 80%;
@@ -335,24 +367,47 @@
     background-color: bisque;
     flex-direction: row-reverse; }
 
-.body--general .text {
-  font-size: 1.2em;
-  margin: 2em;
-  padding: 2em;
-  text-align: center;
+.cultura .cultura__section {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-direction: column-reverse;
   flex-wrap: wrap;
-  justify-content: space-around; }
-  .body--general .text dl dt {
-    font-size: 1.5em;
-    font-weight: bolder;
-    padding: 30px 10px 10px;
+  font-size: 1.2em;
+  margin: 2em auto;
+  padding: 2em;
+  max-width: 80vw; }
+  .cultura .cultura__section h2, .cultura .cultura__section .h2 {
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
     color: #413E3A; }
-  .body--general .text dl dd {
-    text-indent: 15px;
-    padding: 0 1.5em;
-    margin-bottom: 2em; }
+  .cultura .cultura__section .cultura__contenedor {
+    padding: 0 0 0 1em;
+    border-left: orange solid 3px;
+    margin: 1.5em auto; }
+    .cultura .cultura__section .cultura__contenedor .cultura__title {
+      font-size: 1.5em;
+      font-weight: bolder;
+      color: #413E3A;
+      display: block;
+      margin: 0 0 0 1em; }
+    .cultura .cultura__section .cultura__contenedor > div {
+      max-width: 65vw;
+      margin: 1rem 0 0 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-end; }
+      .cultura .cultura__section .cultura__contenedor > div .cultura__text p {
+        text-indent: 1em;
+        max-width: 70ch;
+        margin: 0 1rem;
+        text-align: justify; }
+      .cultura .cultura__section .cultura__contenedor > div figure svg {
+        margin-top: 1rem;
+        width: 10vw;
+        border: 2px black solid;
+        display: inline; }
 
 .body .footer {
   background-color: #38382e;
@@ -369,111 +424,97 @@
     font-weight: bold; }
 
 .body--general .footer {
+  width: 100%;
   background-color: #38382e;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   max-height: fit-content;
   color: #BFA880; }
   .body--general .footer .footer--flex {
     flex-basis: 100%;
-    padding: 1.5em; }
+    padding: 1.5em;
+    font-size: 0.8rem; }
   .body--general .footer .footer__a {
     text-decoration: none;
     color: #e6d07a;
     font-weight: bold; }
 
 @media only screen and (max-width: 430px) {
-  .body {
-    background-image: none;
-    background-color: #fbefce; }
-    .body .header {
-      margin: 10px auto; }
-      .body .header .header__titleBox {
-        max-width: 90%;
-        margin: 10px auto;
-        text-align: center; }
-        .body .header .header__titleBox .header__title {
-          font-size: 3rem;
-          color: #413E3A; }
-        .body .header .header__titleBox .header__subtitle {
-          font-size: 1.2rem;
-          font-weight: bold; }
-    .body .main {
-      flex-direction: column;
-      width: 90vw;
-      margin: 10px auto;
-      align-items: center; }
-      .body .main .imagen {
-        display: flex;
-        flex-flow: row nowrap;
-        width: 100%;
-        height: fit-content;
-        align-items: center;
-        padding-bottom: 0;
-        margin: 0; }
-        .body .main .imagen .imagen__img {
-          width: 15vw;
-          fill: #413E3A;
-          height: 10vh; }
-        .body .main .imagen .imagen__a {
-          font-size: 1.2rem;
-          color: #413E3A;
-          width: 70vw; }
-    .body section form fieldset {
-      text-align: center;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      border: #413E3A double 3px;
-      padding: 5px;
-      border-radius: 0%; }
-      .body section form fieldset .form__title {
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: #413E3A; }
-      .body section form fieldset .form__complete {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        font-size: 0.7rem;
-        margin: 7px;
-        max-height: fit-content;
-        width: 100%; }
-        .body section form fieldset .form__complete .form__complete--display {
-          width: 90%;
-          display: flex;
-          flex-flow: column nowrap;
-          justify-content: center; }
-          .body section form fieldset .form__complete .form__complete--display .form__label {
-            width: 100%;
-            color: #413E3A; }
-          .body section form fieldset .form__complete .form__complete--display .form__input {
-            width: 75%;
-            border: none;
-            background-color: antiquewhite;
-            color: #413E3A; }
-        .body section form fieldset .form__complete .form__checkbox--placement {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start; }
-        .body section form fieldset .form__complete .form__button {
-          display: flex;
-          justify-items: space-between; } }
-
-@media only screen and (min-width: 431px) and (max-width: 920px) {
   .body .header {
-    width: 100%;
     margin: 10px auto; }
     .body .header .header__titleBox {
       max-width: 90%;
-      margin: 10% auto;
+      margin: 10px auto;
       text-align: center; }
       .body .header .header__titleBox .header__title {
-        font-size: 3.5rem;
-        color: #fbefce; }
+        font-size: 3rem;
+        color: #413E3A; }
       .body .header .header__titleBox .header__subtitle {
         font-size: 1.2rem;
         font-weight: bold; }
+  .body .main {
+    flex-direction: column;
+    width: 90vw;
+    margin: 10px auto;
+    align-items: center; }
+    .body .main .imagen {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      height: fit-content;
+      align-items: center;
+      padding-bottom: 0;
+      margin: 0; }
+      .body .main .imagen .imagen__img {
+        width: 15vw;
+        fill: #413E3A;
+        height: 10vh; }
+      .body .main .imagen .imagen__a {
+        font-size: 1.2rem;
+        color: #413E3A;
+        width: 70vw; }
+  .body section form fieldset {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: #413E3A double 3px;
+    padding: 5px;
+    border-radius: 0%; }
+    .body section form fieldset .form__title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #413E3A; }
+    .body section form fieldset .form__complete {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      font-size: 0.7rem;
+      margin: 7px;
+      max-height: fit-content;
+      width: 100%; }
+      .body section form fieldset .form__complete .form__complete--display {
+        width: 90%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center; }
+        .body section form fieldset .form__complete .form__complete--display .form__label {
+          width: 100%;
+          color: #413E3A; }
+        .body section form fieldset .form__complete .form__complete--display .form__input {
+          width: 75%;
+          border: none;
+          background-color: antiquewhite;
+          color: #413E3A; }
+      .body section form fieldset .form__complete .form__checkbox--placement {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+      .body section form fieldset .form__complete .form__button {
+        display: flex;
+        justify-items: space-between; } }
+
+@media only screen and (min-width: 431px) and (max-width: 920px) {
   .body .main {
     flex-direction: column;
     width: 90vw;
@@ -535,57 +576,122 @@
           justify-items: space-between; } }
 
 @media only screen and (max-width: 430px) {
-  .body--general .elab {
-    grid-template-areas: ". cbrown cbrown cbrown cbrown" ". cgreen cgreen cgreen ." ". corange corange corange corange" ". corange corange corange blue";
-    grid-row-gap: 15px; }
-    .body--general .elab .txt1 {
-      width: 75vw; }
-      .body--general .elab .txt1 dl {
-        width: 90%; }
-        .body--general .elab .txt1 dl .list__title {
-          font-size: 1.5rem; }
-        .body--general .elab .txt1 dl .list__item {
-          font-size: 1.2rem; }
-      .body--general .elab .txt1 .txt3 {
-        font-size: 1.2rem;
-        width: 90%; }
-    .body--general .elab .elab__img figure .list__img {
-      display: none; }
-    .body--general .elab .txt4 {
-      width: 90%; }
-      .body--general .elab .txt4 dl .list__title {
-        font-size: 1.5rem; }
-      .body--general .elab .txt4 dl .list__item {
+  .body--general .elab .list {
+    width: 75vw;
+    margin: 0; }
+    .body--general .elab .list dl {
+      width: 100%; }
+      .body--general .elab .list dl .list__title {
+        font-size: 1rem; }
+      .body--general .elab .list dl .list__item {
+        font-size: 1rem; }
+    .body--general .elab .list .elab__text {
+      font-size: 1rem;
+      width: 100%; }
+  .body--general .elab .elab__img figure .list__img {
+    transform: rotate(45deg) translate(15vw, 25vw); }
+  .body--general .elab .elab__secondList {
+    width: 100%; }
+    .body--general .elab .elab__secondList dl .list__title {
+      font-size: 1.2rem; }
+    .body--general .elab .elab__secondList dl .list__item {
+      font-size: 1rem; } }
+
+@media only screen and (max-width: 430px) {
+  .recetas .recetas__section--general {
+    display: block; }
+    .recetas .recetas__section--general .recetas__img {
+      max-width: 40vw;
+      max-height: auto;
+      float: right;
+      margin: 1em; }
+    .recetas .recetas__section--general .recetas__caption {
+      max-width: 90%; }
+      .recetas .recetas__section--general .recetas__caption h4, .recetas .recetas__section--general .recetas__caption .h4 {
+        font-size: 1.5rem;
+        text-align: left; }
+      .recetas .recetas__section--general .recetas__caption p {
+        font-size: 1rem;
+        text-align: justify; } }
+
+@media only screen and (max-width: 430px) {
+  .historia .historia__section .carousel .carousel-inner .carousel__textBox h5, .historia .historia__section .carousel .carousel-inner .carousel__textBox .h5 {
+    font-size: 1.2rem; }
+  .historia .historia__section .carousel .carousel-inner .carousel__textBox p {
+    font-size: 1rem; } }
+
+@media only screen and (max-width: 900px) {
+  .meridaje .meridaje__main .meridaje__title {
+    font-size: 1.5rem; }
+  .meridaje .meridaje__main .lista {
+    max-width: 90%;
+    font-size: 1rem; }
+    .meridaje .meridaje__main .lista li {
+      font-size: 1rem; }
+  .meridaje .meridaje__main--general {
+    display: block; }
+    .meridaje .meridaje__main--general .meridaje__img {
+      display: block;
+      max-width: 40vw;
+      max-height: auto;
+      float: right;
+      margin: 1em; }
+    .meridaje .meridaje__main--general .meridaje__caption {
+      max-width: 90%;
+      display: block; }
+      .meridaje .meridaje__main--general .meridaje__caption h4, .meridaje .meridaje__main--general .meridaje__caption .h4 {
+        font-size: 1.5rem;
+        text-align: left; }
+      .meridaje .meridaje__main--general .meridaje__caption p {
+        font-size: 1rem;
+        text-align: left; } }
+
+@media only screen and (max-width: 430px) {
+  .cultura .cultura__section {
+    padding: 0;
+    width: 90%;
+    font-size: 10px; }
+    .cultura .cultura__section h2, .cultura .cultura__section .h2 {
+      margin: 2em auto;
+      font-weight: bold;
+      text-align: center; }
+    .cultura .cultura__section .cultura__contenedor {
+      width: 100%;
+      padding: 0 0 0 1rem;
+      margin: 1.5em;
+      display: block; }
+      .cultura .cultura__section .cultura__contenedor .cultura__title {
         font-size: 1.2rem; }
-      .body--general .elab .txt4::before {
-        left: -3%; } }
+      .cultura .cultura__section .cultura__contenedor > div {
+        display: block; }
+        .cultura .cultura__section .cultura__contenedor > div .cultura__text p {
+          text-indent: 0;
+          font-size: 0.8rem; }
+      .cultura .cultura__section .cultura__contenedor figure svg {
+        width: 20vw;
+        float: left;
+        margin: 1em; } }
 
 @media only screen and (min-width: 431px) and (max-width: 920px) {
   .body--general .elab {
-    grid-template-areas: ". cbrown cbrown cbrown cbrown" ". cgreen cgreen cgreen ." ". corange corange corange corange" ". corange corange corange blue";
-    grid-row-gap: 15px;
     width: 90%; }
-    .body--general .elab .txt1 {
-      width: 75vw; }
-      .body--general .elab .txt1 dl {
-        width: 90%; }
-        .body--general .elab .txt1 dl .list__title {
-          font-size: 1.5rem; }
-        .body--general .elab .txt1 dl .list__item {
-          font-size: 1.2rem; }
-      .body--general .elab .txt1 .txt3 {
-        font-size: 1.2rem;
-        width: 100%; }
-    .body--general .elab .elab__img figure .list__img {
-      display: none; }
-    .body--general .elab .txt4 {
-      width: 100%; }
-      .body--general .elab .txt4 dl .list__title {
+    .body--general .elab .elab__list dl {
+      width: 90%; }
+      .body--general .elab .elab__list dl .list__title {
         font-size: 1.5rem; }
-      .body--general .elab .txt4 dl .list__item {
+      .body--general .elab .elab__list dl .list__item {
         font-size: 1.2rem; }
-      .body--general .elab .txt4::before {
-        left: -5%; } }
+    .body--general .elab .elab__list .elab__text {
+      font-size: 1.2rem;
+      width: 100%; }
+    .body--general .elab .elab__img figure .list__img {
+      transform: rotate(45deg) translate(vw, 15vw); }
+    .body--general .elab .elab__secondList {
+      width: 100%; }
+      .body--general .elab .elab__secondList dl .list__title {
+        font-size: 1.5rem; }
+      .body--general .elab .elab__secondList dl .list__item {
+        font-size: 1.2rem; } }
 
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)

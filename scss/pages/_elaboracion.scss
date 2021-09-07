@@ -1,94 +1,68 @@
 
 
 
-//hechura
+//Elaboración
 
 
-.body--general{
+.elaboracion{
     .elab{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
-        grid-template-rows: repeat(4, auto);
-        grid-template-areas:
-        ". cbrown cbrown cbrown cblue"
-        ". cgreen cgreen cgreen cblue"
-        ". corange corange corange corange";
-
-        .txt1{
-            grid-area: cbrown;
-            position:relative;
+        max-width:70%;
+        margin: 0 auto 2rem;
+        .list{
+            border-left:$border-left;
+            padding-left: 2rem;
+            margin-bottom: 4em;
+            
             dl{
                 .list__title{
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     color:$fontDarkBrown;
                 }    
             
                 .list__item{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     color: $fontDarkBrown;
                 }
             }            
 
-            .txt3{
-                grid-area: cgreen;
+            .elab__text{
+                font-size: 1rem;
                 font-style: italic;
                 font-weight: normal;
-                width: 90%;
+                max-width: 60ch;
                 color: $fontDarkBrown;
                 text-align: center;
-            }
-
-            &::before{
-                content: '';
-                height: 100%;
-                background-color: orange;
-                width:4px;
-                display:inline;
-                position:absolute;
-                margin-left: 0;
-                left: -5%;
             }
         }
 
         .elab__img{
             figure{
                 .list__img{
-                    grid-area: cblue;
-                    transform: rotate(45deg) translateX(-5vw);
+                    transform: rotate(45deg) translate(-15vw, 15vw);
                     float:right;
+                    width: 15vw;
                 }       
             }     
         }
         
-        .txt4{
-            grid-area: corange;
-            position:relative;
-            max-width: 90%;
+        .elab__secondList{
 
             dl{
+                border-left:$border-left;
+                padding-left: 2rem;
                 .list__title{
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     color:$fontDarkBrown;
                 }    
             
                 .list__item{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     color: $fontDarkBrown;
                     display:list-item;
                     list-style-type: upper-roman;
                     list-style-position: inside;
                     text-align: left;
                 }
-            }
-
-            &::before{
-                content: '';
-                height: 100%;
-                background-color: orange;
-                width:4px;
-                display:inline;
-                position:absolute;
-                left: -3%;
             }
         }
     }

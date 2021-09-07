@@ -2,11 +2,11 @@
 
 //cultura
 
-.body--general{
-    .cultura{
+.cultura{
+    .cultura__section{
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: column-reverse;
         flex-wrap: wrap;   
         font-size: 1.2em;
         margin: 2em auto;
@@ -14,16 +14,15 @@
         max-width: 80vw;
 
         h2{
+            display:block;
             margin: 0 auto;
+            font-weight: bold;
+            color:$fontDarkBrown;
         }
 
-        h3{
-            margin: 1rem auto 3rem;
-        }
-
-        .cultura__container{
+        .cultura__contenedor{
             padding: 0 0 0 1em;
-            border-right: orange solid 3px;
+            border-left: orange solid 3px;
             margin: 1.5em auto;
 
             .cultura__title{
@@ -38,7 +37,7 @@
                 max-width: 65vw;
                 margin: 1rem 0 0 0;
                 display: flex;
-                flex-direction: row-reverse;
+                flex-direction: row;
                 flex-wrap: nowrap;
                 justify-content: flex-end;
 
@@ -64,58 +63,3 @@
     }
 }
 
-
-
-
-// .body--general{
-//     .cultura{
-//         @include flex($flex, $center);
-//         flex-direction: column;
-//         flex-wrap: wrap;   
-//         font-size: 1.2em;
-//         margin: 2em auto;
-//         padding: 2em;
-//         max-width: 80vw;
-
-//         h2, h3{
-//             margin: 0 auto;
-//         }
-
-//         .cultura__container{
-//             padding: 0 0 0 1em;
-//             border-left: orange solid 3px;
-//             margin: 1em auto;
-            
-//             .cultura__title{
-//                 font-size: 1.5em;
-//                 font-weight: bolder;
-//                 padding: 0 0 0 1em;
-//                 margin: 1em auto;
-//             }
-
-//             &>div{     
-//                 max-width: 65vw;
-//                 margin: 0;
-//                 display: flex;
-//                 flex-direction: row-reverse;
-//                 flex-wrap: nowrap;
-//                 justify-content: flex-end;
-
-//                 .cultura__text{
-//                     p{
-//                         text-indent: 1em;
-//                         max-width: 70ch;
-//                     }
-//                 }
-
-//                 figure{
-//                     svg{
-//                         width: 10vw;
-//                         border: 2px black solid;
-//                         display: inline;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
