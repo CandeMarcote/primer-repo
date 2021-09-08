@@ -4,8 +4,9 @@
 
 .body{
     .footer{
+        width:100%;
         background-color: $bgNavBar;
-        margin: 0 auto;
+        margin: 2em 0;
         display: flex;
         max-height: fit-content;
         color:$titleColor;
@@ -29,7 +30,7 @@
     .footer{
         width:100%;
         background-color: $bgNavBar;
-        margin: 0;
+        margin: 2em 0;
         display: flex;
         max-height: fit-content;
         color:$titleColor;

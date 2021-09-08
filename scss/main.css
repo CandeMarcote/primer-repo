@@ -109,11 +109,11 @@
     text-align: center;
   }
   .body .header .header__titleBox .header__title {
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: #fbefce;
   }
   .body .header .header__titleBox .header__subtitle {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     max-width: 90%;
   }
@@ -205,14 +205,14 @@
     padding: 0;
   }
   .body--general .header .header__titleBox .header__titulo {
-    font-size: 3.5rem;
+    font-size: 4rem;
     text-align: center;
     margin: 0;
     width: 100%;
     color: #BFA880;
   }
   .body--general .header .header__titleBox .header__subtitulo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
     max-width: 90%;
   }
@@ -683,8 +683,9 @@
 }
 
 .body .footer {
+  width: 100%;
   background-color: #38382e;
-  margin: 0 auto;
+  margin: 2em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -709,7 +710,7 @@
 .body--general .footer {
   width: 100%;
   background-color: #38382e;
-  margin: 0;
+  margin: 2em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -772,9 +773,9 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
     padding-bottom: 0;
     margin: 0;
   }
@@ -787,6 +788,9 @@
     font-size: 1.2rem;
     color: #413E3A;
     width: 70vw;
+  }
+  .body section {
+    margin-top: 5vh;
   }
   .body section form fieldset {
     text-align: center;
@@ -887,11 +891,11 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-bottom: 0;
-    margin: 0;
+    margin: 0.5em;
   }
   .body .main .imagen .imagen__img {
     width: 15vw;
@@ -901,7 +905,7 @@
   .body .main .imagen .imagen__a {
     font-size: 1.2rem;
     color: #fbefce;
-    width: 70vw;
+    max-width: 50vw;
   }
   .body section form {
     width: 100%;
@@ -909,6 +913,7 @@
     display: -ms-flexbox;
     display: flex;
     justify-items: center;
+    margin: 1.5em auto;
   }
   .body section form fieldset {
     text-align: center;

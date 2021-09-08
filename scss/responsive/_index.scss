@@ -35,14 +35,14 @@
                 flex-flow: row nowrap;
                 width:100%;
                 height: fit-content;
-                align-items: center;
+                align-items: space-around;
                 padding-bottom: 0;
                 margin:0;
 
                 .imagen__img{
                     width: 15vw;
                     fill:$fontDarkBrown;
-                    height: 10vh;               
+                    height: 10vh;           
                 }
 
                 .imagen__a{
@@ -55,6 +55,7 @@
         }
 
         section{
+            margin-top: 5vh;
             form{
                 fieldset{                    
                     text-align: center;
@@ -131,9 +132,9 @@
                 flex-flow: row nowrap;
                 width:100%;
                 height: fit-content;
-                align-items: center;
+                justify-content: center;
                 padding-bottom: 0;
-                margin:0;
+                margin:0.5em;
 
                 .imagen__img{
                     width: 15vw;
@@ -144,7 +145,7 @@
                 .imagen__a{
                     font-size: 1.2rem;                    
                     color:$bgColor;
-                    width:70vw;
+                    max-width: 50vw;
                 }
             }
             
@@ -155,6 +156,7 @@
                 width:100%;
                 display: flex;
                 justify-items: center;
+                margin: 1.5em auto;
 
                 fieldset{                    
                     text-align: center;
